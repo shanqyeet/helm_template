@@ -5,11 +5,11 @@
 2. Update deployment.yaml and configmap.yaml 
 3. Compile MS to jib into Harbor
 4A. If no changes to yaml files:
-- run `kubectl get rs` to retrieve replicasets 
-- kill the existing pods to retrieve update image
+	- run `kubectl get rs` to retrieve replicasets 
+	- kill the existing pods to retrieve update image
 +++
 4B. If changes is made to yaml files 
-- run `kubectl apply -f files` to deploy the MS
+	- run `kubectl apply -f files` to deploy the MS
 5. run `kubectl get pods` to retrive deployed pods
 6. run `kubectl logs pod` to check deployment status
 ---
