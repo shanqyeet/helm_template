@@ -4,14 +4,15 @@
 1. Pull latest Develop branch
 2. Update deployment.yaml and configmap.yaml 
 3. Compile MS to jib into Harbor
-4A. If no changes to yaml files:
+4. If no changes to yaml files:
 	- run `kubectl get rs` to retrieve replicasets 
 	- kill the existing pods to retrieve update image
 +++
-4B. If changes is made to yaml files 
+5. If changes is made to yaml files 
 	- run `kubectl apply -f files` to deploy the MS
-5. run `kubectl get pods` to retrive deployed pods
-6. run `kubectl logs pod` to check deployment status
+6. Check status of deployment 
+	- run `kubectl get pods` to retrive deployed pods
+	- run `kubectl logs pod` to check deployment status
 ---
 ##### New Deployment Process
 1. Update value.yaml file before submitting merge request to develop
